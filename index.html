@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estética Flor de Loto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #fbeffb;
+            color: #4a4a4a;
+        }
+
+        /* Header */
+        header {
+            position: relative;
+            width: 100%;
+            height: 800px;
+            background: url('https://cdn.shopify.com/s/files/1/0701/0235/2088/files/FONDO_ZOOM_BESTWORK_2_aa15960f-c9eb-4b45-8347-72ecbc276ec8.png?v=1731981156') no-repeat center;
+            background-size: cover;
+            margin-bottom: 30px;
+        }
+
+        /* Slider */
+        #slider {
+            max-width: 70%;
+            margin: 30px auto;
+        }
+
+        .carousel-inner img {
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        /* Servicios */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .service {
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        .service img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .service h3 {
+            color: #a64d79;
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .service p {
+            margin: 10px 0;
+        }
+
+        /* Botón "Agenda Aquí" */
+        .agenda-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #25D366;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .agenda-button:hover {
+            background-color: #1DA955;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Botones de contacto */
+        .contact-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 9999;
+        }
+
+        .contact-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: white;
+            padding: 8px 12px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .contact-button img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .contact-button:hover {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+        /* Intro Section */
+        .intro {
+            padding: 50px 20px;
+            background-color: #fbeffb; /* Color de fondo suave */
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 30px auto;
+            max-width: 800px;
+        }
+
+        .intro-container h1 {
+            font-size: 3rem;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #4a4a4a; /* Gris principal */
+        }
+
+        .intro-container h1 .highlight {
+            color: #a64d79; /* Color rosa oscuro */
+        }
+
+        .intro-container h1 .sub-highlight {
+            color: #d291bc; /* Color lavanda */
+            font-style: italic;
+        }
+
+        .intro-container p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #4a4a4a;
+            margin-top: 10px;
+        }
+
+        .intro-container p strong {
+            color: #a64d79; /* Rosa oscuro */
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header></header>
+
+    <!-- Introducción -->
+    <section class="intro">
+        <div class="intro-container text-center">
+            <h1>
+                <span class="highlight">En Estética Flor de Loto, transformamos tu belleza</span>
+            </h1>
+            <p>
+                Ofrecemos una <strong>Experiencia integral de belleza</strong>, con una amplia gama de tratamientos faciales y 
+                corporales diseñados para <strong>Revitalizar y rejuvenecer tu piel.</strong> 
+            </p>
+        </div>
+    </section>
+
+ <!-- Slider -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+ <div id="slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2200">
+     <div class="carousel-inner">
+         <div class="carousel-item active">
+             <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/LIMPIEZA_FACIAL_PROFUNDA.jpg?v=1731457602" class="d-block w-100" alt="Limpieza Facial Profunda">
+             <div class="carousel-caption">
+                 <h5>Limpieza Facial Profunda</h5>
+                 <p>Elimina impurezas y rejuvenece tu piel.</p>
+             </div>
+         </div>
+         <div class="carousel-item">
+             <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/HIDRATACION_FACIAL.jpg?v=1731457603" class="d-block w-100" alt="Hidratación Facial">
+             <div class="carousel-caption">
+                 <h5>Hidratación Facial</h5>
+                 <p>Devuelve la vitalidad a tu rostro.</p>
+             </div>
+         </div>
+         <div class="carousel-item">
+             <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/Masaje_de_Relajacion_Cuerpo_completo.jpg?v=1731457603" class="d-block w-100" alt="Tratamiento Despigmentante">
+             <div class="carousel-caption">
+                 <h5>Masaje Completo</h5>
+                 <p>Relaja cuerpo y alma con nuestros Masajes de Cuerpo Completo</p>
+             </div>
+         </div>
+     </div>
+     <!-- Controles -->
+     <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Anterior</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Siguiente</span>
+     </button>
+ </div>
+    <!-- Servicios -->
+    <section class="service-grid">
+        <!-- Limpieza Facial Profunda -->
+        <div class="service">
+            <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/LIMPIEZA_FACIAL_PROFUNDA.jpg?v=1731457602" alt="Limpieza Facial Profunda">
+            <h3>Limpieza Facial Profunda</h3>
+            <p>Peeling químico con mezcla de ácidos para atenuar manchas y marcas de acné, mejorar la textura de la piel, regeneración y reducción visible de poros, devolviendo la luminosidad natural.</p>
+        <p class="price">$23,900 - 1,5 horas</p>
+
+            <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Limpieza%20Facial%20Profunda" class="agenda-button">Agenda Aquí</a>
+        </div>
+
+        <!-- Hidratación Facial -->
+        <div class="service">
+            <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/HIDRATACION_FACIAL.jpg?v=1731457603" alt="Hidratación Facial">
+            <h3>Hidratación Facial</h3>
+            <p>Aplicación de radiofrecuencia para activar el colágeno y mejorar la elasticidad de la piel. introducción de Ácido Hialurónico, Colágeno y Vitamina C. Finaliza con un masaje facial relajante.</p>
+            <p class="price">$23,900 - 1,5 horas</p>
+
+            <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Hidratación%20Facial" class="agenda-button">Agenda Aquí</a>
+        </div>
+<!-- Tarjeta de servicio 3: Tratamiento Despigmentante -->
+<div class="service">
+    <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/TRATAMIENTO_DESPIGMENTANTE.jpg?v=1731457602" alt="Tratamiento Despigmentante">
+    <h3>Tratamiento Despigmentante</h3>
+    <p>Peeling químico con mezcla de ácidos naturales con el din de atenuar y eliminar manchas y marcas de acné, regeneración y reducción de poros, obteniendo una piel firme y hermosa.</p>
+    <p class="price">$23,900 - 1,5 horas</p>
+    <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Hidratación%20Facial" class="agenda-button">Agenda Aquí</a>
+</div>
+
+<!-- Tarjeta de servicio 4: Tratamiento Anti-acné -->
+<div class="service">
+    <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/TRATAMIENTO_ANTI_ACNE.jpg?v=1731457602" alt="Tratamiento Anti-acné">
+    <h3>Tratamiento Anti-acné</h3>
+    <p>Realizamos limpiezas profundas para eliminar impurezas. Además, ofrecemos sesiones diseñadas para atenuar manchas, cicatrices y marcas, logrando un tono uniforme</p>
+    <p class="price">$23,900 - 1,5 horas (5 sesiones en $95,000)</p>
+    <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Hidratación%20Facial" class="agenda-button">Agenda Aquí</a>
+</div>
+
+<!-- Tarjeta de servicio 5: Rejuvenecimiento Facial -->
+<div class="service">
+    <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/REJUVENECIMIENTO_FACIAL.jpg?v=1731457604" alt="Rejuvenecimiento Facial">
+    <h3>Rejuvenecimiento Facial</h3>
+    <p>Radiofrecuencia (activación de colágeno), Dermapen con sérum de Ácido Hialurónico, Vitamina C y Colágeno, Máscara de tela hidratante y Máscara Led, masaje facial relajante y estimulante.</p>
+    <p class="price">$23,900 - 1,5 horas</p>
+    <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Hidratación%20Facial" class="agenda-button">Agenda Aquí</a>
+</div>
+
+<!-- Tarjeta de servicio 6: Tratamiento Bbglow -->
+<div class="service">
+    <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/TRATAMIENTO_Bbglow.jpg?v=1731457602" alt="Tratamiento Bbglow">
+    <h3>Tratamiento Bbglow</h3>
+    <p>Dermapen con principios activos y sérum según tono de piel, Máscara Led, atenúa color, cicatrices, ilumina e hidrata.</p>
+    <p class="price">$23,900 - 1,5 horas</p>
+    <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Hidratación%20Facial" class="agenda-button">Agenda Aquí</a>
+</div>
+
+<!-- Tarjeta de servicio 7: Masaje de Espalda Mixto -->
+<div class="service">
+    <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/Masaje_de_espalda_mixto.jpg?v=1731457602" alt="Masaje de Espalda Mixto">
+    <h3>Masaje de Espalda Mixto</h3>
+    <p>Maniobras descontracturantes y de relajación, disminución de dolor e inflamación, activación de la circulación, alivio de estrés.</p>
+    <p class="price">$18,000 - 30 minutos</p>
+    <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Hidratación%20Facial" class="agenda-button">Agenda Aquí</a>
+</div>
+
+<!-- Tarjeta de servicio 8: Masaje de Relajación Cuerpo Completo -->
+<div class="service">
+    <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/Masaje_de_Relajacion_Cuerpo_completo.jpg?v=1731457603" alt="Masaje de Relajación Cuerpo Completo">
+    <h3>Masaje de Relajación Cuerpo Completo</h3>
+    <p>Maniobras de relajación, drenaje linfático, alivia dolor, mejora flexibilidad, hidrata la piel, reduce ansiedad y estrés.</p>
+    <p class="price">$25,000 - 1 hora</p>
+    <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Hidratación%20Facial" class="agenda-button">Agenda Aquí</a>
+</div>
+
+<!-- Tarjeta de servicio 9: Limpieza Facial Simple -->
+<div class="service">
+    <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/Limpieza_Facial_simple.jpg?v=1731457602" alt="Limpieza Facial Simple">
+    <h3>Limpieza Facial Simple</h3>
+    <p>Desinfección, Dermoabrasión, exfoliación, Altafrecuencia, Radiofrecuencia para colágeno, Máscara Led.</p>
+    <p class="price">$19,900 - 1 hora</p>
+    <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Hidratación%20Facial" class="agenda-button">Agenda Aquí</a>
+</div>
+
+<!-- Tarjeta de servicio 10: Tratamiento Contorno de Ojos -->
+<div class="service">
+    <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/Tratamiento_Contorno_de_ojos.jpg?v=1731457603" alt="Tratamiento Contorno de Ojos">
+    <h3>Tratamiento Contorno de Ojos</h3>
+    <p>Radiofrecuencia para colágeno, Dermapen con sérum de Ácido Hialurónico, Colágeno y Vitamina C, Máscara Led descongestiva, masaje de drenaje.</p>
+    <p class="price">$11,900 - 30 minutos</p>
+    <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Hidratación%20Facial" class="agenda-button">Agenda Aquí</a>
+</div>
+
+<!-- Tarjeta de servicio 11: Tratamiento Corporal -->
+<div class="service">
+    <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/Tratamiento_Corporal.jpg?v=1731457601" alt="Tratamiento Corporal">
+    <h3>Tratamiento Corporal</h3>
+    <p>Aparatología personalizada (Ondas Rusas, Radiofrecuencia, Lipoláser, Cavitación, drenaje), para tonificar, reafirmar y reducir adiposidad.</p>
+    <p class="price">$18,000 - 1 hora por zona (mínimo 10 sesiones)</p>
+    <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20agendar%20una%20cita%20para%20Hidratación%20Facial" class="agenda-button">Agenda Aquí</a>
+</div>
+
+<!-- Botones de contacto -->
+<div class="contact-buttons">
+    <!-- Botón de WhatsApp -->
+    <div class="contact-button">
+        <a href="https://wa.me/56968967487?text=Hola!%20Quiero%20más%20información" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/WhatsApp_svg.webp?v=1732307600" alt="WhatsApp">
+            <span style="font-size: 14px; font-weight: bold; color: #4a4a4a;">Contáctanos</span>
+        </a>
+    </div>
+
+    <!-- Botón de Instagram -->
+    <div class="contact-button">
+        <a href="https://www.instagram.com/esteticaflordeloto?igsh=MTk0dnVwODh2MnRpNw==" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0701/0235/2088/files/descarga_3_-Photoroom.png?v=1732307982" alt="Instagram">
+            <span style="font-size: 14px; font-weight: bold; color: #4a4a4a;">Visítanos</span>
+        </a>
+    </div>
+</div>
+</body>
+</html>
